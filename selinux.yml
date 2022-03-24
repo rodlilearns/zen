@@ -1,0 +1,9 @@
+---
+- name: Configure SELinux
+  hosts: <target_hosts>
+  tasks:
+
+    - name: Enable SELinux
+      ansible.posix.selinux:
+        policy: targeted
+        state: enforcing

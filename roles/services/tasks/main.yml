@@ -1,0 +1,9 @@
+---
+# tasks file for ./roles/services
+
+- name: Start services, if not started
+  ansible.builtin.service:
+    name: "{{ item }}"
+    state: started
+  loop:
+    - firewalld

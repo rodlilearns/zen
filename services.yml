@@ -1,0 +1,11 @@
+---
+- name: Configure services
+  hosts: <target_hosts>
+  tasks:
+
+    - name: Start services, if not started
+      ansible.builtin.service:
+        name: "{{ item }}"
+        state: started
+      loop:
+        - firewalld
