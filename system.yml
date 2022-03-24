@@ -1,5 +1,6 @@
 ---
 - name: Configure <role> system.
-  hosts: <target_hosts>
+  hosts: localhost
   roles:
-  
+    - selinux
+    - patch

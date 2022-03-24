@@ -1,0 +1,12 @@
+---
+- name: Configure Patching
+  hosts: servers_that_need_patching
+  tasks:
+
+    - name: Install all required packages
+      ansible.builtin.dnf:
+        name:
+          - vim
+          - wget
+        state: latest
+      become: true

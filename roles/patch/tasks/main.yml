@@ -1,0 +1,9 @@
+---
+# tasks file for ./roles/patch
+- name: Install all required packages
+  ansible.builtin.dnf:
+    name:
+      - vim
+      - wget
+    state: present
+  become: true

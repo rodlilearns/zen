@@ -3,10 +3,10 @@ all:
   hosts:
     mail.example.com:
   children:
-    webservers:
+    servers_that_need_patching:
       hosts:
-        foo.example.com:
-        bar.example.com:
+        server1:
+        server2:
     dbservers:
       hosts:
         one.example.com:
