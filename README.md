@@ -2,7 +2,7 @@
 This is an Ansible project to demonstrate how organisations can automate certain configurations in their Linux systems.
 The example configurations include patching, selinux, services, firewall.
 
-## How to use (patch local server):
+## How to use (patch localhost):
 1. In the `patch.yml` playbook, ensure you have set the correct hosts to target (localhost).
 2. In the `patch.yml` playbook, ensure you have the required packages to update/install.
 3. In the command line, change your directory to the Ansible project i.e. ~/zen
